@@ -18,10 +18,9 @@ const DEFAULT = {
     ZOOM: 16
 } as const;
 
-// width指定がないと描画されない。
 const VIEW_STYLE = {
     width: '100%',
-    height: '100%'
+    height: '100%',
 }
 
 const Map: React.FC<MapProps> = ({

@@ -6,7 +6,7 @@ export default function Page() {
     return (
         <main className="min-h-screen">
             <Header title={"ルート作成"}/>
-            <div className="flex flex-row h-screen ">
+            <div className="flex flex-row h-screen">
                 <List/>
                 <Map/>
             </div>
