@@ -1,6 +1,7 @@
 import React from "react";
 import MenuIcon from "@/components/icons/MenuIcon";
 import Link from 'next/link';
+import LogoutButton from "@/components/elements/Button/LogoutButton";
 
 type Props = {
     title?: string
@@ -22,6 +23,9 @@ const Drawer: React.FC<Props> = ({title}) => {
                     <li className="m-4"><Link href='/create'>巡検コース作成</Link></li>
                     <li className="m-4"><Link href='/edit'>巡検コース編集</Link></li>
                     <li className="m-4"><Link href='/document'>ドキュメントの作成</Link></li>
+                    <div className="m-4">
+                        <LogoutButton/>
+                    </div>
                 </ul>
             </div>
         </div>
