@@ -1,6 +1,5 @@
 import React from "react";
 import { FaWater } from "react-icons/fa"
-import { IconContext } from 'react-icons'
 
 const MenuIcon = () => {
     return (

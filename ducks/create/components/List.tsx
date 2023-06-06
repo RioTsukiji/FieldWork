@@ -1,4 +1,5 @@
 import React, {ReactNode} from "react";
+import AddButton from "@/ducks/create/components/AddButton";
 
 type Props = {
 
@@ -31,6 +32,7 @@ const List: React.FC<Props> = ({}) => {
                     <h2 className="text-2xl">16:30</h2>
                 </div>
             </div>
+            <AddButton/>
         </div>
     );
 };

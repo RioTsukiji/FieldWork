@@ -1,5 +1,5 @@
-import Map from "@/features/create/components/Map";
-import List from "@/features/create/components/List";
+import Map from "@/ducks/create/components/Map";
+import List from "@/ducks/create/components/List";
 import Header from "@/components/Header";
 
 export default function Page() {

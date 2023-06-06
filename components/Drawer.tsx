@@ -1,7 +1,7 @@
 import React from "react";
 import MenuIcon from "@/components/icons/MenuIcon";
 import Link from 'next/link';
-import LogoutButton from "@/components/elements/Button/LogoutButton";
+import LogoutButton from "@/ducks/logout/LogoutButton";
 
 type Props = {
     title?: string

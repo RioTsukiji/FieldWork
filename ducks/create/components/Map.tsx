@@ -2,7 +2,7 @@
 
 import React, {useEffect, useRef, useState} from "react";
 import { Wrapper } from "@googlemaps/react-wrapper";
-import Marker from "@/features/create/components/Marker";
+import Marker from "@/ducks/create/components/Marker";
 
 interface MapProps extends google.maps.MapOptions {
     style: { [key: string]: string };
