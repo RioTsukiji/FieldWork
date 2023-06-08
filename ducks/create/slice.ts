@@ -1,28 +1,26 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export type CreaterState = {
-    course: Array<Route>;
+    route: Array<Route>;
     routeNumber: number;
     loading: boolean;
     error: boolean;
     errorMessage: string;
 }
 
-type Route = {
-    startSpot: string;
-    endSpot: string;
+export type Route = {
+    spot: string;
     startTime: string;
     endTime: string;
 }
 
-const initialRouteState: Route = {
-    startSpot: "乃木坂",
-    endSpot: "けやき坂",
-    startTime: "",
-    endTime: "",
+export const initialRouteState: Route = {
+    spot: "乃木坂",
+    startTime: "14:00",
+    endTime: "14:30",
 }
 export const initialState: CreaterState = {
-    course: [initialRouteState],
+    route: [initialRouteState],
     routeNumber: 0,
     loading: false,
     error: false,
@@ -35,6 +33,9 @@ const createrSlice = createSlice({
     reducers: {
         incrementRoute(state, action: PayloadAction<number>){
             state.routeNumber += action.payload
+        },
+        incrementInputBox(state, action: PayloadAction<Route>){
+            state.route.push(action.payload)
         },
     }
 })
